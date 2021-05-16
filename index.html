@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>Blog Template · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+    <style type="text/css">
+      #photo1 {
+          width: 325px;
+          height: 250px;
+          margin: 0 auto;
+          text-align: left;
+          overflow: hidden;
+          position: relative;
+      }
+      #photo2 {
+          width: 325px;
+          height: 250px;
+          margin: 0 auto;
+          text-align: left;
+          overflow: hidden;
+          position: relative;
+      }
+      
+      #photo img {
+          top: 0;
+          left: 0;
+          position: absolute;
+      }
+      </style>
+      
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript">
+      $(function(){
+          var setImg = '#photo1';
+          var fadeSpeed = 1600;
+          var switchDelay = 5000;
+      
+          $(setImg).children('img').css({opacity:'0'});
+          $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+      
+          setInterval(function(){
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+          },switchDelay);
+      });
+      $(function(){
+          var setImg = '#photo2';
+          var fadeSpeed = 1600;
+          var switchDelay = 5000;
+      
+          $(setImg).children('img').css({opacity:'0'});
+          $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+      
+          setInterval(function(){
+              $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+          },switchDelay);
+      });
+      </script>      
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+        <a class="link-secondary" href="#"></a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="#">自己紹介</a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="#" aria-label="Search">
+          
+        </a>
+      </div>
+    </div>
+  </header>
+
+ 
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">名前　鷹野 碧大</h1>
+      <p class="lead my-3">高山高等学校情報処理科３年生</p>
+      <p class="lead mb-0"><a href="#" class="text-white fw-bold"> </a></p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary">ゲーム</strong>
+          <h3 class="mb-0">好きなゲーム<br>Apex Legends<br>VALOLANT</h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="card-text mb-auto">僕はゲームをすることが好きで、<br>最近は友達と一緒に色々なゲームをしています。</p>
+          <a href="#" class="stretched-link"></a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <div id="photo1">
+            <img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop191x100.1200w.jpg" width="325" height="250" alt="">
+            <img src="https://blog.twitch.tv/assets/uploads/rivals-valorant-blog.jpg" width="325" height="250" alt="">
+            <img src="https://estnn.com/wp-content/uploads/2019/07/apex-legends-characters.jpg" width="325" height="250" alt="">
+            <img src="https://prtimes.jp/i/24470/122/resize/d24470-122-689890-1.png" width="325" height="250" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success">食べ物</strong>
+          <h3 class="mb-0">好きな食べ物<br>たこ焼き、寿司</h3>
+          <div class="mb-1 text-muted"></div>
+          <p class="mb-auto">好きな食べ物はたこ焼きと寿司で、好きなネタはサーモンです。 </p>
+          <a href="#" class="stretched-link"></a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <div id="photo2">
+            <img src="http://www.j-subculture.com/img/files/image/so/takoyaki.jpg" width="325" height="250" alt="">
+            <img src="https://haa.athuman.com/media/japanese/wp-content/uploads/sites/4/2020/08/sub_1-1-scaled.jpeg" width="325" height="250" alt="">
+            <img src="https://i.pinimg.com/originals/cf/0e/bc/cf0ebc55fee0e62394aae5446f98ce32.jpg" width="325" height="250" alt="">
+            <img src="https://blogimg.goo.ne.jp/user_image/24/d0/774983088444c1f012cf4cc2efe749bb.jpg" width="325" height="250" alt="">  
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="aaaa">
+      <h3 class="font-italic border-bottom">
+        ホームページを作るにあたって大変だったこと
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title"></h2>
+        <p class="blog-post-meta"> <a href="#"></a></p>
+
+        <p>JavaScriptを活用して、写真を動かそうとしたのですがそうとしたのですが写真の位置が変わってしまったり、<br>写真が不規則に変わるなどのバグが出てきて直すのが大変でした。</p>
+        
+      </article><!-- /.blog-post -->
+    </div>
+
+    
+
+
+    
+  </body>
+</html>
